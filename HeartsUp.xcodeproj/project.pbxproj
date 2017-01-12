@@ -14,6 +14,11 @@
 		451F026F1E271E87005D83F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451F026D1E271E87005D83F5 /* LaunchScreen.storyboard */; };
 		451F027A1E271E87005D83F5 /* HeartsUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F02791E271E87005D83F5 /* HeartsUpTests.swift */; };
 		451F02851E271E87005D83F5 /* HeartsUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F02841E271E87005D83F5 /* HeartsUpUITests.swift */; };
+		451F02931E272204005D83F5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F02921E272204005D83F5 /* MainViewController.swift */; };
+		451F02951E272212005D83F5 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F02941E272212005D83F5 /* PreferencesViewController.swift */; };
+		451F02971E272227005D83F5 /* EnterContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F02961E272227005D83F5 /* EnterContactsViewController.swift */; };
+		451F02991E272238005D83F5 /* EnterBodyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F02981E272238005D83F5 /* EnterBodyInfoViewController.swift */; };
+		451F029B1E27227C005D83F5 /* SexSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F029A1E27227C005D83F5 /* SexSelectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		451F02801E271E87005D83F5 /* HeartsUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartsUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		451F02841E271E87005D83F5 /* HeartsUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartsUpUITests.swift; sourceTree = "<group>"; };
 		451F02861E271E87005D83F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451F02921E272204005D83F5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		451F02941E272212005D83F5 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		451F02961E272227005D83F5 /* EnterContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterContactsViewController.swift; sourceTree = "<group>"; };
+		451F02981E272238005D83F5 /* EnterBodyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterBodyInfoViewController.swift; sourceTree = "<group>"; };
+		451F029A1E27227C005D83F5 /* SexSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexSelectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				451F02641E271E87005D83F5 /* AppDelegate.swift */,
-				451F02661E271E87005D83F5 /* ViewController.swift */,
 				451F02681E271E87005D83F5 /* Main.storyboard */,
+				451F02661E271E87005D83F5 /* ViewController.swift */,
+				451F02961E272227005D83F5 /* EnterContactsViewController.swift */,
+				451F02981E272238005D83F5 /* EnterBodyInfoViewController.swift */,
+				451F029A1E27227C005D83F5 /* SexSelectViewController.swift */,
+				451F02921E272204005D83F5 /* MainViewController.swift */,
+				451F02941E272212005D83F5 /* PreferencesViewController.swift */,
 				451F026B1E271E87005D83F5 /* Assets.xcassets */,
 				451F026D1E271E87005D83F5 /* LaunchScreen.storyboard */,
 				451F02701E271E87005D83F5 /* Info.plist */,
@@ -260,8 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451F02971E272227005D83F5 /* EnterContactsViewController.swift in Sources */,
+				451F02931E272204005D83F5 /* MainViewController.swift in Sources */,
 				451F02671E271E87005D83F5 /* ViewController.swift in Sources */,
+				451F029B1E27227C005D83F5 /* SexSelectViewController.swift in Sources */,
+				451F02991E272238005D83F5 /* EnterBodyInfoViewController.swift in Sources */,
 				451F02651E271E87005D83F5 /* AppDelegate.swift in Sources */,
+				451F02951E272212005D83F5 /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +528,7 @@
 				451F028B1E271E87005D83F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		451F028C1E271E87005D83F5 /* Build configuration list for PBXNativeTarget "HeartsUpTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +537,7 @@
 				451F028E1E271E87005D83F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		451F028F1E271E87005D83F5 /* Build configuration list for PBXNativeTarget "HeartsUpUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +546,7 @@
 				451F02911E271E87005D83F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

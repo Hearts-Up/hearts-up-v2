@@ -1,26 +1,134 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FjW-hd-0es">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="0UF-RI-Kax">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="FjW-hd-0es" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v52-vU-9MJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gfs-ak-CeH" kind="relationship" relationship="rootViewController" id="tqB-yT-nG5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pyF-Xh-0AO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-542" y="-72"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fL3-5y-Ib8">
+            <objects>
+                <viewController storyboardIdentifier="setupScreen" id="Ikl-oI-Fcm" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="iB0-Mh-JZ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="EZp-iV-M1K"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="pUR-ez-YDo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="xIz-pV-yvg">
+                                <rect key="frame" x="104" y="188" width="168" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="27g-fK-gIe"/>
+                                    <constraint firstAttribute="width" constant="168" id="lXS-ht-c39"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqs-6g-4q5">
+                                <rect key="frame" x="135" y="100" width="105" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ccd-Ld-TGH"/>
+                                    <constraint firstAttribute="width" constant="105" id="lB1-en-xMf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HeartsUp is an app designed to alert others in the event that you have a Heart Attack." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdO-58-Fws">
+                                <rect key="frame" x="58" y="361" width="260" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="SIA-Rh-8mc"/>
+                                    <constraint firstAttribute="height" constant="100" id="cds-SZ-OnN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qon-Iq-oh3">
+                                <rect key="frame" x="28" y="505" width="320" height="62"/>
+                                <state key="normal" image="Get_Started"/>
+                                <connections>
+                                    <segue destination="diF-e7-ppX" kind="show" id="efr-ve-iTC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41127970809999997" green="0.74659711120000005" blue="0.81577914949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rdO-58-Fws" firstAttribute="centerX" secondItem="pUR-ez-YDo" secondAttribute="centerX" id="0E1-xF-KCK"/>
+                            <constraint firstItem="Eqs-6g-4q5" firstAttribute="top" secondItem="iB0-Mh-JZ1" secondAttribute="bottom" constant="80" id="81W-0G-vYx"/>
+                            <constraint firstItem="xIz-pV-yvg" firstAttribute="top" secondItem="Eqs-6g-4q5" secondAttribute="bottom" constant="40" id="Gws-dk-Fs8"/>
+                            <constraint firstItem="qon-Iq-oh3" firstAttribute="centerX" secondItem="pUR-ez-YDo" secondAttribute="centerX" id="PmK-dv-VFL"/>
+                            <constraint firstItem="xIz-pV-yvg" firstAttribute="centerX" secondItem="pUR-ez-YDo" secondAttribute="centerX" id="Q4I-Vj-3FI"/>
+                            <constraint firstItem="EZp-iV-M1K" firstAttribute="top" secondItem="qon-Iq-oh3" secondAttribute="bottom" constant="100" id="cP1-t3-lii"/>
+                            <constraint firstItem="rdO-58-Fws" firstAttribute="top" secondItem="xIz-pV-yvg" secondAttribute="bottom" constant="41" id="huw-Yh-qHL"/>
+                            <constraint firstItem="Eqs-6g-4q5" firstAttribute="centerX" secondItem="pUR-ez-YDo" secondAttribute="centerX" id="uBL-8X-ce1"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTS-RQ-h4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="414" y="-895"/>
+        </scene>
+        <!--Enter Contacts View Controller-->
+        <scene sceneID="fUB-6m-thN">
+            <objects>
+                <viewController id="diF-e7-ppX" customClass="EnterContactsViewController" customModule="HeartsUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tyK-7Z-CRn"/>
+                        <viewControllerLayoutGuide type="bottom" id="7zG-Ry-sKi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qYs-Ko-3In">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.41127970809999997" green="0.74659711120000005" blue="0.81577914949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ud6-1v-MpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1295" y="-896"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bYj-iU-Mdc">
+            <objects>
+                <viewController storyboardIdentifier="mainScreen" id="gfs-ak-CeH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p8m-Vh-qd7"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZaU-uw-SXm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xKD-xt-CJe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.41127970809999997" green="0.74659711120000005" blue="0.81577914949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xyJ-5X-beo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="93V-aN-aty" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="-72"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Get_Started" width="320" height="62"/>
+        <image name="Heart" width="168" height="132"/>
+    </resources>
 </document>
