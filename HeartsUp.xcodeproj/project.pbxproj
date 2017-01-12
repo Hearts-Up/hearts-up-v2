@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					451F02601E271E87005D83F5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5YTCFD4983;
 						ProvisioningStyle = Automatic;
 					};
 					451F02741E271E87005D83F5 = {
@@ -410,7 +411,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5YTCFD4983;
 				INFOPLIST_FILE = HeartsUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edd.HeartsUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +425,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5YTCFD4983;
 				INFOPLIST_FILE = HeartsUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edd.HeartsUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
