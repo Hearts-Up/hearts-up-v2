@@ -44,6 +44,8 @@
 	<string>0</string>
 	<key>thirdEmergencyContact</key>
 	<string>0</string>
+	<key>age</key>
+	<integer>0</integer>
 	<key>height</key>
 	<integer>0</integer>
 	<key>weight</key>
@@ -53,6 +55,10 @@
 	<key>isMale</key>
 	<true/>
 	<key>sex</key>
+	<string>0</string>
+	<key>topHR</key>
+	<string>0</string>
+	<key>bottomHR</key>
 	<string>0</string>
 </dict>
 </plist>

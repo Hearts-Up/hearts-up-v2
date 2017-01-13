@@ -34,6 +34,26 @@ class SexSelectViewController: UIViewController {
     @IBAction func setupDoneButton(_ sender: Any) {
         defaults.set(true, forKey: "firstTimeOpened") //Make it so that the first time setup does not run again
         print(defaults.string(forKey: "firstTimeOpened")!) //Print firstTimeOpened to make sure it was set correctly
+        
+        /*//Here are the calculations for the tolerable HR range
+        let isMale = defaults.bool(forKey: "isMale")
+        let age = defaults.double(forKey: "age")
+        let restingHR = defaults.double(forKey: "restingHR")
+        var maxHR:Double
+        
+        if isMale == false {
+            maxHR = 206 - (0.88 * age)
+        }
+        else {
+            maxHR = 220 - age
+        }
+        
+        let hrr = maxHR - restingHR
+        let topHR = hrr * 0.9
+        let bottomHR = hrr *
+        
+        defaults.set(topHR, forKey: "topHR")
+        defaults.set(bottomHR, forKey: "bottomHR")*/
     }
     
     override func didReceiveMemoryWarning() {

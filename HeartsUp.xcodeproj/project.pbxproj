@@ -19,6 +19,7 @@
 		451F02971E272227005D83F5 /* EnterContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F02961E272227005D83F5 /* EnterContactsViewController.swift */; };
 		451F02991E272238005D83F5 /* EnterBodyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F02981E272238005D83F5 /* EnterBodyInfoViewController.swift */; };
 		451F029B1E27227C005D83F5 /* SexSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F029A1E27227C005D83F5 /* SexSelectViewController.swift */; };
+		454AF7D01E29178100975BF6 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454AF7CF1E29178100975BF6 /* CheckViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		451F02961E272227005D83F5 /* EnterContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterContactsViewController.swift; sourceTree = "<group>"; };
 		451F02981E272238005D83F5 /* EnterBodyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterBodyInfoViewController.swift; sourceTree = "<group>"; };
 		451F029A1E27227C005D83F5 /* SexSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexSelectViewController.swift; sourceTree = "<group>"; };
+		454AF7CF1E29178100975BF6 /* CheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				451F029A1E27227C005D83F5 /* SexSelectViewController.swift */,
 				451F02921E272204005D83F5 /* MainViewController.swift */,
 				451F02941E272212005D83F5 /* PreferencesViewController.swift */,
+				454AF7CF1E29178100975BF6 /* CheckViewController.swift */,
 				451F026B1E271E87005D83F5 /* Assets.xcassets */,
 				451F026D1E271E87005D83F5 /* LaunchScreen.storyboard */,
 				451F02701E271E87005D83F5 /* Info.plist */,
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				451F02971E272227005D83F5 /* EnterContactsViewController.swift in Sources */,
+				454AF7D01E29178100975BF6 /* CheckViewController.swift in Sources */,
 				451F02931E272204005D83F5 /* MainViewController.swift in Sources */,
 				451F02671E271E87005D83F5 /* ViewController.swift in Sources */,
 				451F029B1E27227C005D83F5 /* SexSelectViewController.swift in Sources */,

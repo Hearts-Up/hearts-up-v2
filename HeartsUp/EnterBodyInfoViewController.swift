@@ -11,6 +11,7 @@ import UIKit
 class EnterBodyInfoViewController: UIViewController {
 
     //Define text fields
+    @IBOutlet weak var ageField: UITextField!
     @IBOutlet weak var heightField: UITextField!
     @IBOutlet weak var weightField: UITextField!
     @IBOutlet weak var bpmField: UITextField!
@@ -29,8 +30,10 @@ class EnterBodyInfoViewController: UIViewController {
     @IBAction func buttonNext(_ sender: Any) {
         let defaults = UserDefaults.standard //Easier access to Info.plist
         //print("Test")
-        defaults.set(heightField.text, forKey: "height") //Set Text Field Value to Plist variable
-        print(defaults.string(forKey: "height")!) //Print Text Field Value to console to make sure it works
+        defaults.set(ageField.text, forKey: "age") //Set Text Field Value to Plist Variable
+        print(defaults.string(forKey: "age")!) //Print Text Field Value to console to make sure it works
+        defaults.set(heightField.text, forKey: "height")
+        print(defaults.string(forKey: "height")!)
         defaults.set(weightField.text, forKey: "weight")
         print(defaults.string(forKey: "weight")!)
         defaults.set(bpmField.text, forKey: "restingHR")
