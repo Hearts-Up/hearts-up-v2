@@ -35,25 +35,19 @@ class SexSelectViewController: UIViewController {
         defaults.set(true, forKey: "firstTimeOpened") //Make it so that the first time setup does not run again
         print(defaults.string(forKey: "firstTimeOpened")!) //Print firstTimeOpened to make sure it was set correctly
         
-        /*//Here are the calculations for the tolerable HR range
-        let isMale = defaults.bool(forKey: "isMale")
+        //Here are the calculations for the tolerable HR range
         let age = defaults.double(forKey: "age")
         let restingHR = defaults.double(forKey: "restingHR")
-        var maxHR:Double
-        
-        if isMale == false {
-            maxHR = 206 - (0.88 * age)
-        }
-        else {
-            maxHR = 220 - age
-        }
-        
+        let maxHR = 220 - age
         let hrr = maxHR - restingHR
-        let topHR = hrr * 0.9
-        let bottomHR = hrr *
+        let topHR = hrr
+        let bottomHR = round(hrr * 0.2)
         
         defaults.set(topHR, forKey: "topHR")
-        defaults.set(bottomHR, forKey: "bottomHR")*/
+        defaults.set(bottomHR, forKey: "bottomHR")
+        print(defaults.string(forKey: "topHR"))
+        print(defaults.string(forKey: "bottomHR"))
+        super.viewDidLoad()
     }
     
     override func didReceiveMemoryWarning() {

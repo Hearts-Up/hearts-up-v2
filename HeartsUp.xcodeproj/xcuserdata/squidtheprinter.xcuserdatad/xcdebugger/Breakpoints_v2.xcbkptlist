@@ -25,29 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HeartsUp/SexSelectViewController.swift"
-            timestampString = "506006887.997087"
+            filePath = "HeartsUp/CheckViewController.swift"
+            timestampString = "506025272.027888"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "setupDoneButton(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HeartsUp/SexSelectViewController.swift"
-            timestampString = "506007205.446273"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "setupDoneButton(_:)"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "emotionSwitch5(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

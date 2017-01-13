@@ -60,5 +60,15 @@
 	<string>0</string>
 	<key>bottomHR</key>
 	<string>0</string>
+	<key>discSwitch1</key>
+	<integer>0</integer>
+	<key>breathSwitch2</key>
+	<integer>0</integer>
+	<key>lightSwitch3</key>
+	<integer>0</integer>
+	<key>numbSwitch4</key>
+	<integer>0</integer>
+	<key>emotionSwitch5</key>
+	<integer>0</integer>
 </dict>
 </plist>

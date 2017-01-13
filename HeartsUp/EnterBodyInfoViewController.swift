@@ -21,7 +21,7 @@ class EnterBodyInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround() //So that the user can click out of keyboard
-        textFields = [heightField, weightField, bpmField] //Create an array to easier reference the fields
+        textFields = [ageField,heightField, weightField, bpmField] //Create an array to easier reference the fields
         for textField in textFields {
             textField.keyboardType = .numberPad //Force keyboard to be a number pad
         }

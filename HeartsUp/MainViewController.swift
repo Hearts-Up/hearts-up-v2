@@ -10,12 +10,16 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var topHR: UILabel!
+    @IBOutlet weak var bottomHR: UILabel!
     let defaults = UserDefaults.standard //Easier access to Info.plist
     
     let heartURL = URL(string: "http://www.heart.org/HEARTORG/Conditions/HeartAttack/Heart-Attack_UCM_001092_SubHomePage.jsp") //Set URL for "More Info" Button
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        topHR.text = defaults.string(forKey: "topHR")
+        bottomHR.text = defaults.string(forKey: "bottomHR")
         // Do any additional setup after loading the view.
     }
 
