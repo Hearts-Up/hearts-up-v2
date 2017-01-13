@@ -10,12 +10,19 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    let defaults = UserDefaults.standard //Easier access to Info.plist
+    
+    let heartURL = URL(string: "http://www.heart.org/HEARTORG/Conditions/HeartAttack/Heart-Attack_UCM_001092_SubHomePage.jsp") //Set URL for "More Info" Button
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func infoButton(_ sender: Any) {
+        UIApplication.shared.open(heartURL!, options: [:], completionHandler: nil) //Open URL
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

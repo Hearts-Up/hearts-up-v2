@@ -16,8 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let defaults = UserDefaults.standard
+        
         // Override point for customization after application launch.
         //defaults.set(true, forKey: "firstTimeOpened")       // <-- delete eventually
+        
         // Determines which view controller to present on application launch
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         var controller: UIViewController
