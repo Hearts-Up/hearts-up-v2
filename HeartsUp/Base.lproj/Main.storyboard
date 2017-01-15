@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FjW-hd-0es">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gfs-ak-CeH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,22 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="0UF-RI-Kax">
-            <objects>
-                <navigationController id="FjW-hd-0es" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v52-vU-9MJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="gfs-ak-CeH" kind="relationship" relationship="rootViewController" id="tqB-yT-nG5"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pyF-Xh-0AO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-542" y="-72"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="fL3-5y-Ib8">
             <objects>
@@ -447,7 +431,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmX-91-V7N">
-                                <rect key="frame" x="75" y="105" width="100" height="21"/>
+                                <rect key="frame" x="75" y="85" width="100" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="PQw-ci-LfG"/>
                                     <constraint firstAttribute="height" constant="21" id="c58-Zc-hh8"/>
@@ -457,13 +441,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Safe Heart Rate Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdV-xi-AIT">
-                                <rect key="frame" x="34" y="70" width="307" height="30"/>
+                                <rect key="frame" x="34" y="50" width="307" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALb-Tv-xtc">
-                                <rect key="frame" x="183" y="105" width="8" height="21"/>
+                                <rect key="frame" x="183" y="85" width="8" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="jP5-kh-ycD"/>
                                     <constraint firstAttribute="width" constant="8" id="rVq-zX-rXk"/>
@@ -473,7 +457,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIQ-E7-UCq">
-                                <rect key="frame" x="199" y="105" width="100" height="21"/>
+                                <rect key="frame" x="199" y="85" width="100" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="r5E-Va-mvm"/>
                                     <constraint firstAttribute="height" constant="21" id="uhx-p5-2YA"/>
@@ -483,7 +467,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0M-6H-go3">
-                                <rect key="frame" x="38" y="176" width="300" height="150"/>
+                                <rect key="frame" x="38" y="156" width="300" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Oge-MR-0NE"/>
                                     <constraint firstAttribute="height" constant="150" id="eNv-Dn-KQj"/>
@@ -515,7 +499,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xyJ-5X-beo"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="bottomHR" destination="ZmX-91-V7N" id="Kln-gt-e9i"/>
                         <outlet property="topHR" destination="BIQ-E7-UCq" id="vnG-IF-9XR"/>

@@ -35,7 +35,7 @@ class SexSelectViewController: UIViewController {
         defaults.set(true, forKey: "firstTimeOpened") //Make it so that the first time setup does not run again
         print(defaults.string(forKey: "firstTimeOpened")!) //Print firstTimeOpened to make sure it was set correctly
         
-        //Here are the calculations for the tolerable HR range
+        /*//Here are the calculations for the tolerable HR range
         let age = defaults.double(forKey: "age")
         let restingHR = defaults.double(forKey: "restingHR")
         let maxHR = 220 - age
@@ -45,8 +45,7 @@ class SexSelectViewController: UIViewController {
         
         defaults.set(topHR, forKey: "topHR")
         defaults.set(bottomHR, forKey: "bottomHR")
-        print(defaults.string(forKey: "topHR"))
-        print(defaults.string(forKey: "bottomHR"))
+        print(defaults.string(forKey: "bottomHR")!)*/
         super.viewDidLoad()
     }
     

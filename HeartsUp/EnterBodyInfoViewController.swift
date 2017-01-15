@@ -38,6 +38,19 @@ class EnterBodyInfoViewController: UIViewController {
         print(defaults.string(forKey: "weight")!)
         defaults.set(bpmField.text, forKey: "restingHR")
         print(defaults.string(forKey: "restingHR")!)
+        
+        //Here are the calculations for the tolerable HR range
+        let age = defaults.double(forKey: "age")
+        let restingHR = defaults.double(forKey: "restingHR")
+        let maxHR = 220 - age
+        let hrr = maxHR - restingHR
+        let topHR = hrr
+        let bottomHR = round(hrr * 0.2)
+        
+        defaults.set(topHR, forKey: "topHR")
+        defaults.set(bottomHR, forKey: "bottomHR")
+        print(defaults.string(forKey: "topHR")!)
+        print(defaults.string(forKey: "bottomHR")!)
     }
     
     override func didReceiveMemoryWarning() {
