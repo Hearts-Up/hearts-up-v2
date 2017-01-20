@@ -44,8 +44,10 @@ class EnterBodyInfoViewController: UIViewController {
         let restingHR = defaults.double(forKey: "restingHR")
         let maxHR = 220 - age
         let hrr = maxHR - restingHR
-        let topHR = hrr
-        let bottomHR = round(hrr * 0.2)
+        let rangemax = round(hrr * 0.6)
+        let target = rangemax + restingHR
+        let topHR = target
+        let bottomHR = round(target * 0.4)
         
         defaults.set(topHR, forKey: "topHR")
         defaults.set(bottomHR, forKey: "bottomHR")

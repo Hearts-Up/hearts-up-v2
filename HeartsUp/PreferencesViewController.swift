@@ -14,6 +14,7 @@ class PreferencesViewController: UIViewController {
     @IBOutlet weak var firstContactLabel: UILabel!
     @IBOutlet weak var secondContactLabel: UILabel!
     @IBOutlet weak var thirdContactLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var labelWeight: UILabel!
     @IBOutlet weak var hrLabel: UILabel!
@@ -31,6 +32,7 @@ class PreferencesViewController: UIViewController {
         firstContactLabel.text = defaults.string(forKey: "firstEmergencyContact")
         secondContactLabel.text = defaults.string(forKey: "secondEmergencyContact")
         thirdContactLabel.text = defaults.string(forKey: "thirdEmergencyContact")
+        ageLabel.text = defaults.string(forKey: "age")
         heightLabel.text = defaults.string(forKey: "height")
         labelWeight.text = defaults.string(forKey: "weight")
         hrLabel.text = defaults.string(forKey: "restingHR")
@@ -74,6 +76,14 @@ class PreferencesViewController: UIViewController {
             UserDefaults.standard.set(alert.textFields?[0].text, forKey: "thirdEmergencyContact")
             self.viewDidLoad()
         }))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func ageEdit(_ sender: Any) {
+        let alert = UIAlertController(title: "Age", message: "Enter New Age (Years)", preferredStyle: .alert)
+        alert.addTextField(configurationHandler: { (UITextField) -> Void in UITextField.keyboardType = .numberPad})
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction((UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) -> Void in UserDefaults.standard.set(alert.textFields?[0].text, forKey: "age"); self.viewDidLoad()})))
         present(alert, animated: true, completion: nil)
     }
     
@@ -126,8 +136,10 @@ class PreferencesViewController: UIViewController {
         let restingHR = defaults.double(forKey: "restingHR")
         let maxHR = 220 - age
         let hrr = maxHR - restingHR
-        let topHR = hrr
-        let bottomHR = round(hrr * 0.2)
+        let rangemax = round(hrr * 0.6)
+        let target = rangemax + restingHR
+        let topHR = target
+        let bottomHR = round(target * 0.4)
         defaults.set(topHR, forKey: "topHR")
         defaults.set(bottomHR, forKey: "bottomHR")
         

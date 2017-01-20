@@ -42,7 +42,7 @@ class CheckViewController: UIViewController, MFMessageComposeViewControllerDeleg
     }
     @IBAction func discSwitch1(_ sender: UISwitch) {
         if sender.isOn == true {
-            defaults.set(1, forKey: "discSwitch1")
+            defaults.set(2, forKey: "discSwitch1")
             print(defaults.string(forKey: "discSwitch1")!)
             dankMeme()
         }
@@ -55,7 +55,7 @@ class CheckViewController: UIViewController, MFMessageComposeViewControllerDeleg
     
     @IBAction func breathSwitch2(_ sender: UISwitch) {
         if sender.isOn == true {
-            defaults.set(1, forKey: "breathSwitch2")
+            defaults.set(2, forKey: "breathSwitch2")
             dankMeme()
         }
         else {
