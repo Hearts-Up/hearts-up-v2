@@ -28,12 +28,32 @@ class EnterContactsViewController: UIViewController {
     
     @IBAction func okPressed(_ sender: Any) {
         let defaults = UserDefaults.standard //Easier access to Info.plist
-        defaults.set(firstContactField.text, forKey: "firstEmergencyContact") //Set Text Field Value to Plist variable
+        
+        if firstContactField.text == "" {
+            defaults.set("", forKey: "firstEmergencyContact")
+        }
+        else {
+            defaults.set(firstContactField.text, forKey: "firstEmergencyContact") //Set Text Field Value to Plist variable
+        }
+        
+        if secondContactField.text == "" {
+            defaults.set("", forKey: "secondEmergencyContact")
+        }
+        else {
+            defaults.set(secondContactField.text, forKey: "secondEmergencyContact")
+        }
+        
+        if thirdContactField.text == "" {
+            defaults.set("", forKey: "thirdEmergencyContact")
+        }
+        else {
+            defaults.set(thirdContactField.text, forKey: "thirdEmergencyContact")
+        }
+        
         print(defaults.string(forKey: "firstEmergencyContact")!) //Print Text Field Value to console to make sure it works
-        defaults.set(secondContactField.text, forKey: "secondEmergencyContact")
         print(defaults.string(forKey: "secondEmergencyContact")!)
-        defaults.set(thirdContactField.text, forKey: "thirdEmergencyContact")
         print(defaults.string(forKey: "thirdEmergencyContact")!)
+        
     }
     
     

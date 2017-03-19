@@ -15,13 +15,14 @@ class EnterBodyInfoViewController: UIViewController {
     @IBOutlet weak var heightField: UITextField!
     @IBOutlet weak var weightField: UITextField!
     @IBOutlet weak var bpmField: UITextField!
+    @IBOutlet weak var mmhgField: UITextField!
     
     var textFields = [UITextField]() //Define the array
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround() //So that the user can click out of keyboard
-        textFields = [ageField,heightField, weightField, bpmField] //Create an array to easier reference the fields
+        textFields = [ageField,heightField, weightField, bpmField, mmhgField] //Create an array to easier reference the fields
         for textField in textFields {
             textField.keyboardType = .numberPad //Force keyboard to be a number pad
         }
@@ -30,16 +31,27 @@ class EnterBodyInfoViewController: UIViewController {
     @IBAction func buttonNext(_ sender: Any) {
         let defaults = UserDefaults.standard //Easier access to Info.plist
         //print("Test")
+        if bpmField.text == "" {
+            defaults.set(85, forKey: "restingHR")
+        }
+        else {
+            defaults.set(bpmField.text, forKey: "restingHR")
+        }
+        if mmhgField.text == "" {
+            defaults.set(80, forKey: "restingBP")
+        }
+        else {
+            defaults.set(mmhgField.text, forKey: "restingBP")
+        }
         defaults.set(ageField.text, forKey: "age") //Set Text Field Value to Plist Variable
         print(defaults.string(forKey: "age")!) //Print Text Field Value to console to make sure it works
         defaults.set(heightField.text, forKey: "height")
         print(defaults.string(forKey: "height")!)
         defaults.set(weightField.text, forKey: "weight")
         print(defaults.string(forKey: "weight")!)
-        defaults.set(bpmField.text, forKey: "restingHR")
         print(defaults.string(forKey: "restingHR")!)
-        
-        //Here are the calculations for the tolerable HR range
+        print(defaults.string(forKey: "restingBP")!)
+
         let age = defaults.double(forKey: "age")
         let restingHR = defaults.double(forKey: "restingHR")
         let maxHR = 220 - age

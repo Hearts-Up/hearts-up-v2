@@ -50,11 +50,19 @@
 	<string>0</string>
 	<key>age</key>
 	<integer>0</integer>
+	<key>test1</key>
+	<integer>0</integer>
+	<key>test2</key>
+	<integer>0</integer>
+	<key>test3</key>
+	<integer>0</integer>
 	<key>height</key>
 	<integer>0</integer>
 	<key>weight</key>
 	<integer>0</integer>
 	<key>restingHR</key>
+	<integer>0</integer>
+	<key>restingBP</key>
 	<integer>0</integer>
 	<key>isMale</key>
 	<true/>
@@ -64,15 +72,11 @@
 	<string>0</string>
 	<key>bottomHR</key>
 	<string>0</string>
-	<key>discSwitch1</key>
+	<key>chestPain</key>
 	<integer>0</integer>
-	<key>breathSwitch2</key>
+	<key>chestPainExercise</key>
 	<integer>0</integer>
-	<key>lightSwitch3</key>
-	<integer>0</integer>
-	<key>numbSwitch4</key>
-	<integer>0</integer>
-	<key>emotionSwitch5</key>
+	<key>emotionalVolatility</key>
 	<integer>0</integer>
 </dict>
 </plist>

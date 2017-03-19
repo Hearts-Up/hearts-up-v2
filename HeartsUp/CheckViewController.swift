@@ -11,22 +11,28 @@ import MessageUI
 /*import Foundation
 import CoreLocation*/
 
+let defaults = UserDefaults.standard
+
 class CheckViewController: UIViewController, MFMessageComposeViewControllerDelegate/*, CLLocationManagerDelegate*/ {
     
     @IBOutlet weak var buttonDisabled: UIButton!
-    let defaults = UserDefaults.standard
+    @IBOutlet weak var switch1: UISwitch!
+    @IBOutlet weak var switch2: UISwitch!
+    @IBOutlet weak var switch3: UISwitch!
+    @IBOutlet weak var switch4: UISwitch!
+    @IBOutlet weak var switch5: UISwitch!
     
     //let locationManager = CLLocationManager()
+    let age = defaults.double(forKey: "age")
+    let sex = defaults.double(forKey: "isMale")
+    let bloodPressure = defaults.double(forKey: "restingBP")
     
-    //this function needs to change to reflect the model
     func check() {
-        let num1 = defaults.double(forKey: "discSwitch1")
-        let num2 = defaults.double(forKey: "breathSwitch2")
-        let num3 = defaults.double(forKey: "lightSwitch3")
-        let num4 = defaults.double(forKey: "numbSwitch4")
-        let num5 = defaults.double(forKey: "emotionSwitch5")
-        let addition = num1 + num2 + num3 + num4 + num5
-        if addition >= 3 {
+        let chestPain = defaults.double(forKey: "chestPain")
+        let chestPainExercise = defaults.double(forKey: "chestPainExercise")
+        let addition = (((age / 100) * 0.2) + sex + (1.5 * ((chestPain - 1) / 3)) + (0.1 * ((bloodPressure - 80) / 120)) + (2.4 * chestPainExercise)) / 5.2
+        print(addition)
+        if addition >= 0.3 {
             buttonDisabled.isEnabled = true
         }
         else {
@@ -42,6 +48,8 @@ class CheckViewController: UIViewController, MFMessageComposeViewControllerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        switch2.isEnabled = false
+        switch3.isEnabled = false
         check()
         /*self.locationManager.requestAlwaysAuthorization()
         self.locationManager.requestWhenInUseAuthorization()
@@ -58,69 +66,74 @@ class CheckViewController: UIViewController, MFMessageComposeViewControllerDeleg
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func discSwitch1(_ sender: UISwitch) {
+
+    @IBAction func asymptomaticSwitch1(_ sender: UISwitch) {
         if sender.isOn == true {
-            defaults.set(2, forKey: "discSwitch1")
-            print(defaults.string(forKey: "discSwitch1")!)
+            switch2.isEnabled = true
+            switch3.isEnabled = true
+            defaults.set(2, forKey: "chestPain")
             check()
         }
         else {
-            defaults.set(0, forKey: "discSwitch1")
-            print(defaults.string(forKey: "discSwitch1")!)
+            switch2.isEnabled = false
+            switch3.isEnabled = false
+            defaults.set(1, forKey: "chestPain")
             check()
         }
     }
     
-    @IBAction func breathSwitch2(_ sender: UISwitch) {
+    @IBAction func atypicalAnginaSwitch2(_ sender: UISwitch) {
         if sender.isOn == true {
-            defaults.set(2, forKey: "breathSwitch2")
+            switch3.isEnabled = false
+            defaults.set(3, forKey: "chestPain")
             check()
         }
         else {
-            defaults.set(0, forKey: "breathSwitch2")
+            switch3.isEnabled = true
+            defaults.set(2, forKey: "chestPain")
+            check()
+        }
+    }
+
+    @IBAction func nonAnginalSwitch3(_ sender: UISwitch) {
+        if sender.isOn == true {
+            switch2.isEnabled = false
+            defaults.set(4, forKey: "chestPain")
+            check()
+        }
+        else {
+            switch2.isEnabled = true
+            defaults.set(2, forKey: "chestPain")
             check()
         }
     }
     
-    @IBAction func lightSwitch3(_ sender: UISwitch) {
+    @IBAction func chestPainExerciseSwitch4(_ sender: UISwitch) {
         if sender.isOn == true {
-            defaults.set(1, forKey: "lightSwitch3")
+            defaults.set(1, forKey: "chestPainExercise")
             check()
         }
         else {
-            defaults.set(0, forKey: "lightSwitch3")
-            check()
-        }
-    }
-    
-    @IBAction func numbSwitch4(_ sender: UISwitch) {
-        if sender.isOn == true {
-            defaults.set(1, forKey: "numbSwitch4")
-            check()
-        }
-        else {
-            defaults.set(0, forKey: "numbSwitch4")
+            defaults.set(0, forKey: "chestPainExercise")
             check()
         }
     }
     
     @IBAction func emotionSwitch5(_ sender: UISwitch) {
         if sender.isOn == true {
-            defaults.set(1, forKey: "emotionSwitch5")
+            defaults.set(1, forKey: "emotionalVolatility")
             check()
         }
         else {
-            defaults.set(0, forKey: "emotionSwitch5")
+            defaults.set(0, forKey: "emotionalVolatility")
             check()
         }
     }
     
     @IBAction func backButton(_ sender: Any) {
-        defaults.set(0, forKey: "discSwitch1")
-        defaults.set(0, forKey: "breathSwitch2")
-        defaults.set(0, forKey: "lightSwitch3")
-        defaults.set(0, forKey: "numbSwitch4")
-        defaults.set(0, forKey: "emotionSwitch5")
+        defaults.set(1, forKey: "chestPain")
+        defaults.set(0, forKey: "chestPainExercise")
+        defaults.set(0, forKey: "emotionalVolatility")
     }
     
     

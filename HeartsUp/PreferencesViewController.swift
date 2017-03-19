@@ -18,6 +18,7 @@ class PreferencesViewController: UIViewController {
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var labelWeight: UILabel!
     @IBOutlet weak var hrLabel: UILabel!
+    @IBOutlet weak var bpLabel: UILabel!
     @IBOutlet weak var sexLabel: UILabel!
     
     let defaults = UserDefaults.standard
@@ -36,6 +37,7 @@ class PreferencesViewController: UIViewController {
         heightLabel.text = defaults.string(forKey: "height")
         labelWeight.text = defaults.string(forKey: "weight")
         hrLabel.text = defaults.string(forKey: "restingHR")
+        bpLabel.text = defaults.string(forKey: "restingBP")
         sexLabel.text = defaults.string(forKey: "sex")
     }
     
@@ -103,13 +105,19 @@ class PreferencesViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    
-    
     @IBAction func editHR(_ sender: Any) {
         let alert = UIAlertController(title: "Resting HR", message: "Enter New Resting HR (BPM)", preferredStyle: .alert)
         alert.addTextField(configurationHandler: { (UITextField) -> Void in UITextField.keyboardType = .numberPad})
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         alert.addAction((UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) -> Void in UserDefaults.standard.set(alert.textFields?[0].text, forKey: "restingHR"); self.viewDidLoad()})))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func editBP(_ sender: Any) {
+        let alert = UIAlertController(title: "Resting BP", message: "Enter New Resting BP (mmHg)", preferredStyle: .alert)
+        alert.addTextField(configurationHandler: { (UITextField) -> Void in UITextField.keyboardType = .numberPad})
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction((UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) -> Void in UserDefaults.standard.set(alert.textFields?[0].text, forKey: "restingBP"); self.viewDidLoad()})))
         present(alert, animated: true, completion: nil)
     }
     
@@ -119,11 +127,11 @@ class PreferencesViewController: UIViewController {
         defaults.set(false, forKey: "firstTimeOpened")
         defaults.set("Male", forKey: "sex")
         defaults.set(true, forKey: "isMale")
-        defaults.set(0, forKey: "discSwitch1")
-        defaults.set(0, forKey: "breathSwitch2")
-        defaults.set(0, forKey: "lightSwitch3")
-        defaults.set(0, forKey: "numbSwitch4")
-        defaults.set(0, forKey: "emotionSwitch5")
+        defaults.set(85, forKey: "restingHR")
+        defaults.set(80, forKey: "restingBP")
+        defaults.set(1, forKey: "chestPain")
+        defaults.set(0, forKey: "chestPainExercise")
+        defaults.set(0, forKey: "emotionalVolatility")
         //defaults.set(<#T##url: URL?##URL?#>, forKey: <#T##String#>)
         print(defaults.bool(forKey: "firstTimeOpened"))
         print("Quitting App...")
