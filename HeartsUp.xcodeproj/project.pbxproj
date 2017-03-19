@@ -20,6 +20,12 @@
 		451F02991E272238005D83F5 /* EnterBodyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F02981E272238005D83F5 /* EnterBodyInfoViewController.swift */; };
 		451F029B1E27227C005D83F5 /* SexSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F029A1E27227C005D83F5 /* SexSelectViewController.swift */; };
 		454AF7D01E29178100975BF6 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454AF7CF1E29178100975BF6 /* CheckViewController.swift */; };
+		45D742B51E7EF44C00F618AF /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D742B41E7EF44C00F618AF /* IntentHandler.swift */; };
+		45D742BE1E7EF44C00F618AF /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D742BD1E7EF44C00F618AF /* IntentsUI.framework */; };
+		45D742C11E7EF44C00F618AF /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D742C01E7EF44C00F618AF /* IntentViewController.swift */; };
+		45D742C41E7EF44C00F618AF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D742C21E7EF44C00F618AF /* MainInterface.storyboard */; };
+		45D742C81E7EF44C00F618AF /* HeartsUpSiriIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 45D742BB1E7EF44C00F618AF /* HeartsUpSiriIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		45D742CB1E7EF44C00F618AF /* HeartsUpSiriIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 45D742B21E7EF44C00F618AF /* HeartsUpSiriIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,36 @@
 			remoteGlobalIDString = 451F02601E271E87005D83F5;
 			remoteInfo = HeartsUp;
 		};
+		45D742C61E7EF44C00F618AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 451F02591E271E87005D83F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45D742BA1E7EF44C00F618AF;
+			remoteInfo = HeartsUpSiriIntentUI;
+		};
+		45D742C91E7EF44C00F618AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 451F02591E271E87005D83F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45D742B11E7EF44C00F618AF;
+			remoteInfo = HeartsUpSiriIntent;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45D742D21E7EF44C00F618AF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				45D742C81E7EF44C00F618AF /* HeartsUpSiriIntentUI.appex in Embed App Extensions */,
+				45D742CB1E7EF44C00F618AF /* HeartsUpSiriIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		451F02611E271E87005D83F5 /* HeartsUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartsUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +94,14 @@
 		451F02981E272238005D83F5 /* EnterBodyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterBodyInfoViewController.swift; sourceTree = "<group>"; };
 		451F029A1E27227C005D83F5 /* SexSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexSelectViewController.swift; sourceTree = "<group>"; };
 		454AF7CF1E29178100975BF6 /* CheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
+		45D742B21E7EF44C00F618AF /* HeartsUpSiriIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HeartsUpSiriIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D742B41E7EF44C00F618AF /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		45D742B61E7EF44C00F618AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45D742BB1E7EF44C00F618AF /* HeartsUpSiriIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HeartsUpSiriIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D742BD1E7EF44C00F618AF /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		45D742C01E7EF44C00F618AF /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		45D742C31E7EF44C00F618AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		45D742C51E7EF44C00F618AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +126,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45D742AF1E7EF44C00F618AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D742B81E7EF44C00F618AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D742BE1E7EF44C00F618AF /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +150,9 @@
 				451F02631E271E87005D83F5 /* HeartsUp */,
 				451F02781E271E87005D83F5 /* HeartsUpTests */,
 				451F02831E271E87005D83F5 /* HeartsUpUITests */,
+				45D742B31E7EF44C00F618AF /* HeartsUpSiriIntent */,
+				45D742BF1E7EF44C00F618AF /* HeartsUpSiriIntentUI */,
+				45D742BC1E7EF44C00F618AF /* Frameworks */,
 				451F02621E271E87005D83F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +163,8 @@
 				451F02611E271E87005D83F5 /* HeartsUp.app */,
 				451F02751E271E87005D83F5 /* HeartsUpTests.xctest */,
 				451F02801E271E87005D83F5 /* HeartsUpUITests.xctest */,
+				45D742B21E7EF44C00F618AF /* HeartsUpSiriIntent.appex */,
+				45D742BB1E7EF44C00F618AF /* HeartsUpSiriIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +206,33 @@
 			path = HeartsUpUITests;
 			sourceTree = "<group>";
 		};
+		45D742B31E7EF44C00F618AF /* HeartsUpSiriIntent */ = {
+			isa = PBXGroup;
+			children = (
+				45D742B41E7EF44C00F618AF /* IntentHandler.swift */,
+				45D742B61E7EF44C00F618AF /* Info.plist */,
+			);
+			path = HeartsUpSiriIntent;
+			sourceTree = "<group>";
+		};
+		45D742BC1E7EF44C00F618AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45D742BD1E7EF44C00F618AF /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45D742BF1E7EF44C00F618AF /* HeartsUpSiriIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				45D742C01E7EF44C00F618AF /* IntentViewController.swift */,
+				45D742C21E7EF44C00F618AF /* MainInterface.storyboard */,
+				45D742C51E7EF44C00F618AF /* Info.plist */,
+			);
+			path = HeartsUpSiriIntentUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,10 +243,13 @@
 				451F025D1E271E87005D83F5 /* Sources */,
 				451F025E1E271E87005D83F5 /* Frameworks */,
 				451F025F1E271E87005D83F5 /* Resources */,
+				45D742D21E7EF44C00F618AF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				45D742C71E7EF44C00F618AF /* PBXTargetDependency */,
+				45D742CA1E7EF44C00F618AF /* PBXTargetDependency */,
 			);
 			name = HeartsUp;
 			productName = HeartsUp;
@@ -199,13 +292,47 @@
 			productReference = 451F02801E271E87005D83F5 /* HeartsUpUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		45D742B11E7EF44C00F618AF /* HeartsUpSiriIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45D742D11E7EF44C00F618AF /* Build configuration list for PBXNativeTarget "HeartsUpSiriIntent" */;
+			buildPhases = (
+				45D742AE1E7EF44C00F618AF /* Sources */,
+				45D742AF1E7EF44C00F618AF /* Frameworks */,
+				45D742B01E7EF44C00F618AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartsUpSiriIntent;
+			productName = HeartsUpSiriIntent;
+			productReference = 45D742B21E7EF44C00F618AF /* HeartsUpSiriIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		45D742BA1E7EF44C00F618AF /* HeartsUpSiriIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45D742D01E7EF44C00F618AF /* Build configuration list for PBXNativeTarget "HeartsUpSiriIntentUI" */;
+			buildPhases = (
+				45D742B71E7EF44C00F618AF /* Sources */,
+				45D742B81E7EF44C00F618AF /* Frameworks */,
+				45D742B91E7EF44C00F618AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartsUpSiriIntentUI;
+			productName = HeartsUpSiriIntentUI;
+			productReference = 45D742BB1E7EF44C00F618AF /* HeartsUpSiriIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		451F02591E271E87005D83F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = HeartsUp;
 				TargetAttributes = {
@@ -223,6 +350,16 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 451F02601E271E87005D83F5;
+					};
+					45D742B11E7EF44C00F618AF = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 5YTCFD4983;
+						ProvisioningStyle = Automatic;
+					};
+					45D742BA1E7EF44C00F618AF = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 5YTCFD4983;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -242,6 +379,8 @@
 				451F02601E271E87005D83F5 /* HeartsUp */,
 				451F02741E271E87005D83F5 /* HeartsUpTests */,
 				451F027F1E271E87005D83F5 /* HeartsUpUITests */,
+				45D742B11E7EF44C00F618AF /* HeartsUpSiriIntent */,
+				45D742BA1E7EF44C00F618AF /* HeartsUpSiriIntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -268,6 +407,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D742B01E7EF44C00F618AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D742B91E7EF44C00F618AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D742C41E7EF44C00F618AF /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +459,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45D742AE1E7EF44C00F618AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D742B51E7EF44C00F618AF /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D742B71E7EF44C00F618AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D742C11E7EF44C00F618AF /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -317,6 +487,16 @@
 			isa = PBXTargetDependency;
 			target = 451F02601E271E87005D83F5 /* HeartsUp */;
 			targetProxy = 451F02811E271E87005D83F5 /* PBXContainerItemProxy */;
+		};
+		45D742C71E7EF44C00F618AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45D742BA1E7EF44C00F618AF /* HeartsUpSiriIntentUI */;
+			targetProxy = 45D742C61E7EF44C00F618AF /* PBXContainerItemProxy */;
+		};
+		45D742CA1E7EF44C00F618AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45D742B11E7EF44C00F618AF /* HeartsUpSiriIntent */;
+			targetProxy = 45D742C91E7EF44C00F618AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -335,6 +515,14 @@
 				451F026E1E271E87005D83F5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		45D742C21E7EF44C00F618AF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45D742C31E7EF44C00F618AF /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -434,6 +622,7 @@
 		451F028A1E271E87005D83F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5YTCFD4983;
 				INFOPLIST_FILE = HeartsUp/Info.plist;
@@ -448,6 +637,7 @@
 		451F028B1E271E87005D83F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5YTCFD4983;
 				INFOPLIST_FILE = HeartsUp/Info.plist;
@@ -513,6 +703,66 @@
 			};
 			name = Release;
 		};
+		45D742CC1E7EF44C00F618AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = 5YTCFD4983;
+				INFOPLIST_FILE = HeartsUpSiriIntent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edd.HeartsUp.HeartsUpSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		45D742CD1E7EF44C00F618AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = 5YTCFD4983;
+				INFOPLIST_FILE = HeartsUpSiriIntent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edd.HeartsUp.HeartsUpSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		45D742CE1E7EF44C00F618AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = 5YTCFD4983;
+				INFOPLIST_FILE = HeartsUpSiriIntentUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edd.HeartsUp.HeartsUpSiriIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		45D742CF1E7EF44C00F618AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = 5YTCFD4983;
+				INFOPLIST_FILE = HeartsUpSiriIntentUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edd.HeartsUp.HeartsUpSiriIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -551,6 +801,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		45D742D01E7EF44C00F618AF /* Build configuration list for PBXNativeTarget "HeartsUpSiriIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45D742CE1E7EF44C00F618AF /* Debug */,
+				45D742CF1E7EF44C00F618AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		45D742D11E7EF44C00F618AF /* Build configuration list for PBXNativeTarget "HeartsUpSiriIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45D742CC1E7EF44C00F618AF /* Debug */,
+				45D742CD1E7EF44C00F618AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
