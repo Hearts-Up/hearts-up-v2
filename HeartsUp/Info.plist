@@ -38,6 +38,10 @@
 	</array>
 	<key>firstTimeOpened</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To help notify your contacts of your location, you can recieve help quicker and easier.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>To help notify your contacts of your location, you can recieve help quicker and easier.</string>
 	<key>firstEmergencyContact</key>
 	<string>0</string>
 	<key>secondEmergencyContact</key>

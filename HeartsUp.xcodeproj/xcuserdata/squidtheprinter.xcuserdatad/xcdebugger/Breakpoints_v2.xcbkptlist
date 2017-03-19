@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HeartsUp/CheckViewController.swift"
-            timestampString = "506025272.027888"
+            timestampString = "511641666.08942"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "emotionSwitch5(_:)"
             landmarkType = "7">
          </BreakpointContent>
