@@ -561,7 +561,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ff-is-8eE">
-                                <rect key="frame" x="67" y="548" width="240" height="55"/>
+                                <rect key="frame" x="67" y="519" width="240" height="55"/>
                                 <state key="normal" image="Text_Message"/>
                                 <connections>
                                     <action selector="textMessageGenerator:" destination="GlY-lY-hBz" eventType="touchUpInside" id="g21-Ev-6rl"/>
@@ -596,27 +596,27 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LWT-p6-ynK">
-                                <rect key="frame" x="59" y="309" width="51" height="31"/>
+                                <rect key="frame" x="84" y="314" width="51" height="31"/>
                                 <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="atypicalAnginaSwitch2:" destination="GlY-lY-hBz" eventType="valueChanged" id="geb-xj-K9f"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EU2-jx-bLz">
-                                <rect key="frame" x="59" y="373" width="51" height="31"/>
+                                <rect key="frame" x="84" y="358" width="51" height="31"/>
                                 <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="nonAnginalSwitch3:" destination="GlY-lY-hBz" eventType="valueChanged" id="PBS-IQ-NtP"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pFQ-du-o3g">
-                                <rect key="frame" x="59" y="437" width="51" height="31"/>
+                                <rect key="frame" x="59" y="409" width="51" height="31"/>
                                 <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="chestPainExerciseSwitch4:" destination="GlY-lY-hBz" eventType="valueChanged" id="Nx2-eg-P3d"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chest Pain..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnr-vs-Bat">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chest pain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnr-vs-Bat">
                                 <rect key="frame" x="116" y="270" width="200" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="OXQ-0k-7Pw"/>
@@ -626,8 +626,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...Above Ribcage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBU-3z-lqV">
-                                <rect key="frame" x="116.5" y="309" width="200" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Above ribcage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBU-3z-lqV">
+                                <rect key="frame" x="141.5" y="314" width="200" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="0wB-G0-Pjc"/>
                                     <constraint firstAttribute="width" constant="200" id="Bla-HE-0Ru"/>
@@ -636,18 +636,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...Above Ribcage and Lasting Shorter Than 5 Seconds or Longer Than 30 Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s20-yE-Ezl">
-                                <rect key="frame" x="116" y="348" width="200" height="82"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Above ribcage; &lt; 5 seconds or &gt; 30 minutes" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s20-yE-Ezl">
+                                <rect key="frame" x="141" y="353" width="200" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="SFF-DU-dlT"/>
-                                    <constraint firstAttribute="height" constant="82" id="zsc-mN-RbP"/>
+                                    <constraint firstAttribute="height" constant="41" id="zsc-mN-RbP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chest Pain After Exercise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1n-L7-eOQ">
-                                <rect key="frame" x="116" y="438" width="200" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chest pain after exercise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1n-L7-eOQ">
+                                <rect key="frame" x="116" y="409" width="200" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="ISA-rL-Tk4"/>
                                     <constraint firstAttribute="width" constant="200" id="Rqb-aN-Y0o"/>
@@ -656,8 +656,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotional Volatility" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mY-3H-8aB">
-                                <rect key="frame" x="116" y="477" width="200" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotional volatility" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mY-3H-8aB">
+                                <rect key="frame" x="116" y="448" width="200" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="EA5-Td-aoV"/>
                                     <constraint firstAttribute="width" constant="200" id="IIv-ep-Kfy"/>
@@ -667,7 +667,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sDy-6O-pzk">
-                                <rect key="frame" x="59" y="476" width="51" height="31"/>
+                                <rect key="frame" x="59" y="448" width="51" height="31"/>
                                 <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="emotionSwitch5:" destination="GlY-lY-hBz" eventType="valueChanged" id="C0D-8l-pg9"/>
@@ -676,13 +676,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.41127970809999997" green="0.74659711120000005" blue="0.81577914949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="C1n-L7-eOQ" firstAttribute="top" secondItem="s20-yE-Ezl" secondAttribute="bottom" constant="8" id="52z-uN-8Zz"/>
+                            <constraint firstItem="C1n-L7-eOQ" firstAttribute="top" secondItem="s20-yE-Ezl" secondAttribute="bottom" constant="15" id="52z-uN-8Zz"/>
                             <constraint firstItem="Hnr-vs-Bat" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" constant="28.5" id="6A4-U2-pBL"/>
                             <constraint firstItem="4mY-3H-8aB" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" constant="28.5" id="83l-UP-dl1"/>
-                            <constraint firstItem="LWT-p6-ynK" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" constant="-104" id="8a9-Xj-HxB"/>
+                            <constraint firstItem="LWT-p6-ynK" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" constant="-79" id="8a9-Xj-HxB"/>
                             <constraint firstItem="4mY-3H-8aB" firstAttribute="top" secondItem="C1n-L7-eOQ" secondAttribute="bottom" constant="8" id="DQg-0N-9Rg"/>
                             <constraint firstItem="GBU-3z-lqV" firstAttribute="leading" secondItem="LWT-p6-ynK" secondAttribute="trailing" constant="8" id="Ja4-n4-Jpa"/>
-                            <constraint firstItem="GBU-3z-lqV" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" constant="28.5" id="Jcx-GK-TQY"/>
                             <constraint firstItem="oFl-Nz-IJu" firstAttribute="top" secondItem="eA9-Ba-cht" secondAttribute="bottom" constant="40" id="Jy7-pf-IQd"/>
                             <constraint firstItem="C1n-L7-eOQ" firstAttribute="leading" secondItem="pFQ-du-o3g" secondAttribute="trailing" constant="8" id="KnV-FF-sxf"/>
                             <constraint firstItem="qN3-uH-dh1" firstAttribute="top" secondItem="wZU-Bk-HUr" secondAttribute="topMargin" constant="20" id="M6k-iR-vT9"/>
@@ -691,19 +690,18 @@
                             <constraint firstItem="oFl-Nz-IJu" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" constant="-104" id="QAx-yp-gLL"/>
                             <constraint firstItem="sDy-6O-pzk" firstAttribute="top" secondItem="pFQ-du-o3g" secondAttribute="bottom" constant="8" id="QnS-Ml-CDU"/>
                             <constraint firstItem="sDy-6O-pzk" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" constant="-104" id="RKD-0K-wq9"/>
-                            <constraint firstItem="s20-yE-Ezl" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" constant="28.5" id="RYW-OR-i8G"/>
-                            <constraint firstItem="GBU-3z-lqV" firstAttribute="top" secondItem="Hnr-vs-Bat" secondAttribute="bottom" constant="8" id="Sj1-9W-yG0"/>
+                            <constraint firstItem="GBU-3z-lqV" firstAttribute="top" secondItem="Hnr-vs-Bat" secondAttribute="bottom" constant="13" id="Sj1-9W-yG0"/>
                             <constraint firstItem="eA9-Ba-cht" firstAttribute="top" secondItem="WEV-K6-ofS" secondAttribute="bottom" constant="10" id="Tcm-iL-APt"/>
                             <constraint firstItem="WEV-K6-ofS" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" id="bvJ-NF-9mV"/>
-                            <constraint firstItem="LWT-p6-ynK" firstAttribute="top" secondItem="oFl-Nz-IJu" secondAttribute="bottom" constant="8" id="cxZ-D8-x0O"/>
+                            <constraint firstItem="LWT-p6-ynK" firstAttribute="top" secondItem="oFl-Nz-IJu" secondAttribute="bottom" constant="13" id="cxZ-D8-x0O"/>
                             <constraint firstItem="qN3-uH-dh1" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" id="fVr-EI-pvp"/>
                             <constraint firstItem="pFQ-du-o3g" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" constant="-104" id="faO-ca-uns"/>
-                            <constraint firstItem="EU2-jx-bLz" firstAttribute="top" secondItem="LWT-p6-ynK" secondAttribute="bottom" constant="33" id="h3c-PE-zKU"/>
-                            <constraint firstItem="pFQ-du-o3g" firstAttribute="top" secondItem="EU2-jx-bLz" secondAttribute="bottom" constant="33" id="jev-Gy-VHz"/>
+                            <constraint firstItem="EU2-jx-bLz" firstAttribute="top" secondItem="LWT-p6-ynK" secondAttribute="bottom" constant="13" id="h3c-PE-zKU"/>
+                            <constraint firstItem="pFQ-du-o3g" firstAttribute="top" secondItem="EU2-jx-bLz" secondAttribute="bottom" constant="20" id="jev-Gy-VHz"/>
                             <constraint firstItem="C1n-L7-eOQ" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" constant="28.5" id="qZM-gP-I7e"/>
                             <constraint firstItem="6Ff-is-8eE" firstAttribute="top" secondItem="4mY-3H-8aB" secondAttribute="bottom" constant="40" id="sIN-r9-HCz"/>
                             <constraint firstItem="WEV-K6-ofS" firstAttribute="top" secondItem="qN3-uH-dh1" secondAttribute="bottom" constant="10" id="tVt-ac-XWj"/>
-                            <constraint firstItem="EU2-jx-bLz" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" constant="-104" id="udj-Pg-4BX"/>
+                            <constraint firstItem="EU2-jx-bLz" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" constant="-79" id="udj-Pg-4BX"/>
                             <constraint firstItem="s20-yE-Ezl" firstAttribute="leading" secondItem="EU2-jx-bLz" secondAttribute="trailing" constant="8" id="x0s-xA-bbH"/>
                             <constraint firstItem="6Ff-is-8eE" firstAttribute="centerX" secondItem="wZU-Bk-HUr" secondAttribute="centerX" id="xPN-bG-8dm"/>
                             <constraint firstItem="4mY-3H-8aB" firstAttribute="leading" secondItem="sDy-6O-pzk" secondAttribute="trailing" constant="8" id="yPe-QV-2My"/>
